@@ -3,8 +3,9 @@ package com.mokelab.lesson.mytodo.db
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
-@Dao
+//@Dao
 interface ToDoDAO {
+/*
     @Insert
     fun insert(todo: ToDo)
 
@@ -19,4 +20,5 @@ interface ToDoDAO {
 
     @Delete
     fun delete(todo: ToDo)
+ */
 }

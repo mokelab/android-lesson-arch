@@ -7,8 +7,10 @@ import com.mokelab.lesson.mytodo.db.ToDoDB
 import com.mokelab.lesson.mytodo.repository.ToDoRepositoryImpl
 
 class MainViewModel(app: Application): AndroidViewModel(app) {
+/*
     private val db = Room.databaseBuilder(
         app, ToDoDB::class.java,"todo-db")
         .build()
     val todoRepository = ToDoRepositoryImpl(db)
+ */
 }

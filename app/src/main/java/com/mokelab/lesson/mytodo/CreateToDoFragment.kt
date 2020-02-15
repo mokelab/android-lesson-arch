@@ -15,7 +15,10 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class CreateToDoFragment: Fragment() {
+/*
     private val mainViewModel: MainViewModel by activityViewModels()
+
+ */
 
     private lateinit var titleEdit: EditText
     private lateinit var contentEdit: EditText
@@ -41,11 +44,13 @@ class CreateToDoFragment: Fragment() {
         val title = titleEdit.text.toString()
         val content = contentEdit.text.toString()
 
+/*
         this.mainViewModel.viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 mainViewModel.todoRepository.create(title, content)
             }
             Navigation.findNavController(view!!).popBackStack()
         }
+ */
     }
 }

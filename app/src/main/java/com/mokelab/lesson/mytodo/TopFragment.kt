@@ -21,6 +21,7 @@ class TopFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: ToDoAdapter
+/*
     private val mainViewModel: MainViewModel by activityViewModels()
     private val viewModel: TopViewModel by viewModels(factoryProducer = {
         object: ViewModelProvider.Factory {
@@ -30,6 +31,7 @@ class TopFragment : Fragment() {
             }
         }
     })
+ */
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -52,10 +54,12 @@ class TopFragment : Fragment() {
             this.adapter = ToDoAdapter(inflater, listener)
         this.recyclerView.adapter = adapter
 
+/*
         viewModel.todoList.observe(this, Observer {
             if (it == null) return@Observer
             this.adapter.submitList(it)
         })
+ */
 
         return root
     }

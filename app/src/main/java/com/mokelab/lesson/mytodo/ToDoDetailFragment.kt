@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.mokelab.lesson.mytodo.repository.ToDoRepository
 
 class ToDoDetailFragment: Fragment() {
+/*
     private val mainViewModel: MainViewModel by activityViewModels()
     private val viewModel: ToDoDetailViewModel by viewModels(factoryProducer = {
         object: ViewModelProvider.Factory {
@@ -23,6 +24,7 @@ class ToDoDetailFragment: Fragment() {
             }
         }
     })
+ */
 
     private var todoId: Int = 0
 
@@ -38,11 +40,13 @@ class ToDoDetailFragment: Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_todo_detail, container, false)
 
+/*
         viewModel.getById(this.todoId).observe(this, Observer {
             if (it == null) return@Observer
             root.findViewById<TextView>(R.id.text_title).text = it.title
             root.findViewById<TextView>(R.id.text_content).text = it.content
         })
+ */
 
         return root
     }

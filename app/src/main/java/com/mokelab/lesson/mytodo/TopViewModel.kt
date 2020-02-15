@@ -8,7 +8,9 @@ import com.mokelab.lesson.mytodo.repository.ToDoRepository
 class TopViewModel(
     private val toDoRepository: ToDoRepository
 ): ViewModel() {
+/*
     val todoList: LiveData<List<ToDo>> by lazy {
         toDoRepository.getAll()
     }
+ */
 }
